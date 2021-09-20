@@ -1,0 +1,132 @@
+.team {
+}
+.team__container {
+}
+.team__header {
+  margin: 0px 0px 71px 0px;
+  padding-bottom: 7px;
+
+  @media (max-width: $tablet__width) {
+    margin: 0px 0px 50px 0px;
+  }
+  @media (max-width: $mobile__width) {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.team__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px -14px;
+
+  @media (max-width: $tablet__width) {
+    justify-content: center;
+  }
+}
+.team__column {
+  flex: 0 1 33.33%;
+  padding: 0px 14px;
+  max-width: 398px;
+  
+  @media (max-width: $tablet__width) {
+    flex: 0 1 50%;
+
+    &:not(:last-child) {
+      margin: 0px 0px 30px 0px;
+    }
+  }
+  @media (max-width: $mobile__width) {
+    flex: 0 1 100%;
+
+    &:not(:last-child) {
+      margin: 0px 0px 20px 0px;
+    }
+  }
+}
+.team__item {
+}
+.item-team {
+  font-family: Oswald;
+  position: relative;
+  overflow: hidden;
+  padding: 0px 0px 107% 0px;
+
+  @media(min-width: $tablet__width) {
+    &:hover .item-team__discription {
+      opacity: 0.92;
+      bottom: 0px;
+  
+      & .item-team__name::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+.item-team_active .item-team__discription {
+  opacity: 0.92;
+  bottom: 0px;
+
+  .item-team__name::after {
+    opacity: 1;
+  }
+}
+.item-team__img {
+  img {
+    padding-bottom: 1px;
+  }
+}
+.item-team__discription {
+  position: absolute;
+  z-index: 3;
+  background: #fff;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1.152px;
+  color: #252525;
+  opacity: 0.5;
+  transition: all 0.7s ease 0s;
+
+  @media (max-width: $tablet__width) {
+    font-size: 16px;
+  }
+}
+.item-team__name {
+  padding: 19px 0px 9px 0px;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 12.1%;
+    background: #252525;
+    bottom: 0;
+    right: 44%;
+    transition: all 0.7s ease 0s;
+    opacity: 0;
+  }
+}
+.item-team__body {
+  padding: 6px 30px 30px 30px;
+
+  & > *:not(:last-child) {
+    padding-bottom: 0px 0px 12px 0px;
+  }
+}
+.item-team__post {
+}
+.item-team__text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 208%;
+  letter-spacing: 1.008px;
+  color: #777777;
+}

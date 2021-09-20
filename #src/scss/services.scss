@@ -1,0 +1,139 @@
+.services {
+  color: #252525;
+  font-family: Oswald;
+}
+.services__container {
+}
+._container {
+}
+.services__header {
+  padding-bottom: 7px;
+  margin: 0px 0px 91px 0px;
+
+  @media (max-width: $tablet__width) {
+    margin: 0px 0px 50px 0px;
+  }
+  @media (max-width: $mobile__width) {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.services__body {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -13px;
+  min-width: 135px;
+
+  @media (max-width: $tablet__width) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: $mobile__width) {
+    margin: 0 -34px;
+  }
+}
+.services__column {
+  flex: 1 1 33.333%;
+  padding: 0px 13px;
+
+  @media (max-width: $tablet__width) {
+    &:not(:last-child) {
+      flex: 1 1 50%;
+      margin: 0px 0px 30px 0px;
+    }
+  }
+  @media (max-width: $mobile__width) {
+    &:not(:last-child) {
+      flex: 1 1 100%;
+      margin: 0px 0px 20px 0px;
+    }
+  }
+}
+.services__item {
+  padding: 50px 49px 35px 43px;
+}
+.item-services {
+  background: #fff;
+  transition: all 0.3s ease 0s;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0px 0px 20px #DBDBDB;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  & > *:not(:last-child) {
+    margin: 0px 0px 19px 0px;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #70BF73;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+  }
+}
+.item-services__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-services__header {
+  position: relative;
+  width: max-content;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  padding-right: 15px;
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 41%;
+    background: #252525;
+  }
+}
+.item-services__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px #DBDBDB;
+}
+.item-services__body {
+}
+.item-services__text {
+  font-size: 12px;
+  line-height: 208%;
+  letter-spacing: 1.008px;
+  color: #777777;
+}
+.item-services__link {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  color: inherit;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+}

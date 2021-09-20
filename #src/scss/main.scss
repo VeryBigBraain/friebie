@@ -1,0 +1,68 @@
+.main__main-block {
+}
+@import './main-block.scss';
+
+.main__weare {
+  padding: 147px 0px 80px 0px;
+
+  @media (max-width: $tablet__width) {
+    padding: 80px 0px 14% 0px;
+  }
+  @media (max-width: $mobile__width) {
+    padding: 20px 0px 16% 0px;
+  }
+}
+@import './weare.scss';
+
+.main__services {
+  padding: 129px 0px 136px 0px;
+
+  @media (max-width: $tablet__width) {
+    padding: 80px 0px 50px 0px;
+  }
+  @media (max-width: $mobile__width) {
+    padding: 50px 0px 40px 0px;
+  }
+}
+
+.main__latestwork {
+  padding: 200px 0px 173px 0px;
+
+  @media (max-width: $tablet__width) {
+    padding: 80px 0px 20px 0px;
+  }
+  @media (max-width: $mobile__width) {
+    padding: 40px 0px 20px 0px;
+  }
+}
+@import './latestwork.scss';
+
+@import './services.scss';
+
+.main__team {
+  padding: 135px 0px 167px 0px;
+
+  @media (max-width: $tablet__width) {
+    padding: 80px 0px 50px 0px;
+  }
+  @media (max-width: $mobile__width) {
+    padding: 50px 0px 50px 0px;
+  }
+}
+@import './team.scss';
+
+.main__rewiew {
+  padding: 117px 5px;
+
+  @media (max-width: $tablet__width) {
+    padding: 80px 0px 50px 0px;
+  }
+  @media (max-width: $mobile__width) {
+    padding: 40px 0px 40px 0px;
+  }
+}
+@import './rewiew';
+
+.main__contuctus {
+}
+@import './contactus.scss';
