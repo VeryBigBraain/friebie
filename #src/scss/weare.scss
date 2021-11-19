@@ -27,8 +27,8 @@
 }
 .weare__box {
   width: 26%;
-  position: relative;
   padding: 0px 0px 35.36% 0px;
+  position: relative;
 
   &::before,
   &::after {
@@ -82,7 +82,11 @@
   }
 }
 .weare__header {
+  position: relative;
   font-family: Oswald;
+  transform: translate(0px, 150px);
+  opacity: 0;
+  transition: transform 0.4s ease 0s;
   color: #333333;
   font-weight: 700;
   font-size: calc(24px + 12 * (100vw / 1182));
@@ -101,12 +105,25 @@
     letter-spacing: 2.688px;
     color: #504E4E;
   }
+
+  &._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
 }
 .weare__text-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
+  transform: translate(0px, 150px);
+  opacity: 0;
+  transition: transform 0.5s ease 0s;
+
+  &._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
 }
 .weare__text {
   font-weight: 300;

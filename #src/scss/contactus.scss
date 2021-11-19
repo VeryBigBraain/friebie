@@ -32,6 +32,10 @@
     background: #70BD59;
   }
 
+  &:active {
+    background: rgb(84, 143, 66);
+  }
+
   @media (max-width: $tablet__width) {
     border: none;
 
@@ -39,9 +43,18 @@
       color: inherit;
       background: inherit;
     }
+
+    &:active {
+      background: #dfdfdf;
+    }
+
     &:last-child {
       color: #FFFFFF;
       background: #70BD59;
+    }
+
+    &:last-child:active {
+      background: rgb(84, 143, 66);
     }
   }
   @media (max-width: $mobile__width) {

@@ -128,12 +128,29 @@
     }
   }
 
+  &:active {
+    color: #548f42;
+
+    &::after,
+    &::before {
+      background: #548f42;
+    }
+  }
+
   &_active::after {
     min-width: 120%;
     margin: 0px;
   }
 
   @media (max-width: $tablet__width) {
+    &:hover {
+      color: #fff;
+    }
+
+    &:active {
+      color: #4CAF50
+    }
+
     &::after {
       display: none;
     }

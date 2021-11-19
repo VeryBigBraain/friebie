@@ -74,6 +74,10 @@
   opacity: 0.3;
   padding: 0px 20.25px;
   margin: 10px 0px 0px 0px;
+  
+  &:active {
+    text-decoration: underline;
+  }
 
   &:hover {
     opacity: 1;
@@ -165,6 +169,20 @@
     @media (max-width: $tablet__width) {
       bottom: 40%;
     }
+  }
+}
+.title-item-latestwork {
+  opacity: 0;
+  transform: translate(0, 150px);
+  transition: transform 0.4s ease 0s;
+
+  @media (max-width: $tablet__width) {
+    transform: translate(0, 100px);
+  }
+
+  &._active {
+    opacity: 1;
+    transform: translate(0, 0px);
   }
 }
 .item-latestwork_odd {

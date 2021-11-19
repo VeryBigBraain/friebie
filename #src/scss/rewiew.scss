@@ -89,8 +89,21 @@
     opacity: 1;
   }
 
+  &:active {
+    opacity: 1;
+    color: #000;
+  }
+
   @media (max-width: $tablet__width) {
     font-size: 16px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+    &:active {
+      opacity: 1;
+      color: #000;
+    }
   }
 }
 .arrow_prev {

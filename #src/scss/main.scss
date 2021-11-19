@@ -1,4 +1,11 @@
+section {
+  position: relative;
+  z-index: 1;
+  background: #f2f2f2;
+}
+
 .main__main-block {
+
 }
 @import './main-block.scss';
 
