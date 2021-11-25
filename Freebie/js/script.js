@@ -103,3 +103,44 @@ if (animItems.length > 0) {
     animOnScroll();
   }, 300);
 }
+
+// SWIPER
+
+new Swiper(".swiper", {
+  // Стрелки
+  navigation: {
+    nextEl: ".arrow_next",
+    prevEl: ".arrow_prev",
+  },
+
+  // Вкл/выкл перетаскивания на ПК
+  simulateTouch: true,
+  // Чувствительность свайпа
+  touchRatio: 1,
+  touchAngle: 45,
+  grabCursor: true,
+
+  keyboard: {
+    enavled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+
+  /* mousewheel: {
+    sesitivity: 1,
+  }, */
+
+  slidesPerView: 1,
+
+  watchOverflow: true,
+
+  slidesPerGroup: 1,
+
+  initialSlide: 1,
+  
+  loop: true,
+
+  speed: 800,
+
+  effect: 'slide',
+});

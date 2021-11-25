@@ -84,6 +84,9 @@
   color: #373737;
   font-size: 20px;
   opacity: 0.5;
+  position: absolute;
+  top: 70%;
+  z-index: 10;
 
   &:hover {
     opacity: 1;
@@ -107,7 +110,7 @@
   }
 }
 .arrow_prev {
-  left: 0;
+  left: 5%;
 
   @media (max-width: $tablet__width) {
     left: 16%;
@@ -117,7 +120,7 @@
   }
 }
 .arrow_next {
-  right: 0;
+  right: 5%;
 
   @media (max-width: $tablet__width) {
     right: 16%;
@@ -126,3 +129,4 @@
     right: 5%;
   }
 }
+

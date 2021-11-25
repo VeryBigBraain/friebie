@@ -1428,6 +1428,9 @@ section {
   color: #373737;
   font-size: 20px;
   opacity: 0.5;
+  position: absolute;
+  top: 70%;
+  z-index: 10;
 }
 
 .arrow:hover {
@@ -1440,11 +1443,11 @@ section {
 }
 
 .arrow_prev {
-  left: 0;
+  left: 5%;
 }
 
 .arrow_next {
-  right: 0;
+  right: 5%;
 }
 
 .contuctus__items {
